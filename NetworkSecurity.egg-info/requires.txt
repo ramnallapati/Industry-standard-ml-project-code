@@ -3,3 +3,4 @@ numpy
 pymongo
 python-dotenv
 certifi
+scikit-learn
