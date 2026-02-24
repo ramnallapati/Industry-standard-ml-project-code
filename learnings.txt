@@ -1,0 +1,6 @@
+
+🔐 Certifi
+It is a python package that provides a collection of trusted ssl certificates.
+It helps python verify that a secure (HTTPS/TLS) connection is safe and trusted
+
+
