@@ -1,0 +1,35 @@
+[2026-02-25 22:27:15,011] 1025 httpx - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2026-02-25 22:27:15,075] 107 dagshub - Accessing as ramnallapati
+[2026-02-25 22:27:16,537] 1025 httpx - HTTP Request: GET https://dagshub.com/api/v1/repos/ramnallapati/Industry-standard-ml-project-code "HTTP/1.1 200 OK"
+[2026-02-25 22:27:17,529] 1025 httpx - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2026-02-25 22:27:17,534] 107 dagshub - Initialized MLflow to track repo "ramnallapati/Industry-standard-ml-project-code"
+[2026-02-25 22:27:17,536] 107 dagshub - Repository ramnallapati/Industry-standard-ml-project-code initialized!
+[2026-02-25 22:27:17,537] 20 root - Initiate the Data ingestion
+[2026-02-25 22:27:28,019] 65 root - Performed train test split on the Dataframe
+[2026-02-25 22:27:28,019] 67 root - Exited split_data_as_train_test method od Data_Ingestion class
+[2026-02-25 22:27:28,019] 71 root - exporting train and test file path.
+[2026-02-25 22:27:28,025] 79 root - Exported train and test file path
+[2026-02-25 22:27:28,026] 22 root - Data Ingestion completed
+[2026-02-25 22:27:28,038] 26 root - Initiate Data validation
+[2026-02-25 22:27:28,104] 41 root - Required number of columns:{number_of_columns}
+[2026-02-25 22:27:28,104] 42 root - Dataframe has columns:10
+[2026-02-25 22:27:28,104] 41 root - Required number of columns:{number_of_columns}
+[2026-02-25 22:27:28,104] 42 root - Dataframe has columns:10
+[2026-02-25 22:27:28,123] 28 root - data validation completed
+[2026-02-25 22:27:28,124] 30 root - Data Transformation Initiatiated
+[2026-02-25 22:27:28,124] 71 root - Entered initiate_data_transformation method of DataTransformation class
+[2026-02-25 22:27:28,124] 74 root - starting data transformation
+[2026-02-25 22:27:28,131] 55 root - Entered get_data_transformer_object method of Transformation class
+[2026-02-25 22:27:28,131] 61 root - Initialize KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[2026-02-25 22:27:28,138] 50 root - Enter the save_object method of mainUtils class
+[2026-02-25 22:27:28,139] 54 root - Exited the save_object method of Mainutils class
+[2026-02-25 22:27:28,139] 50 root - Enter the save_object method of mainUtils class
+[2026-02-25 22:27:28,140] 54 root - Exited the save_object method of Mainutils class
+[2026-02-25 22:27:28,140] 35 root - Data Transformation Completed
+[2026-02-25 22:27:28,140] 37 root - Model Training started
+[2026-02-25 22:28:28,838] 50 root - Enter the save_object method of mainUtils class
+[2026-02-25 22:28:28,839] 54 root - Exited the save_object method of Mainutils class
+[2026-02-25 22:28:28,839] 50 root - Enter the save_object method of mainUtils class
+[2026-02-25 22:28:28,867] 54 root - Exited the save_object method of Mainutils class
+[2026-02-25 22:28:28,867] 125 root - Model Trainer artifact: ModelTrainerArtifact(trained_model_file_path='Artifacts\\02_25_2026_22_27_08\\model_trainer\\trained_model\\model.pkl', train_metric_artifact=ClassificationMetricArtifact(f1_score=0.919226393629124, precision_score=0.9119638826185101, recall_score=0.926605504587156), test_metric_artifact=ClassificationMetricArtifact(f1_score=0.933920704845815, precision_score=0.9217391304347826, recall_score=0.9464285714285714))
+[2026-02-25 22:29:06,603] 42 root - model Training artifact created
