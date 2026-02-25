@@ -2,10 +2,11 @@
 from networksecurity.components.data_ingestion import DataIngestion
 from networksecurity.exception.exception import NetworkSecurityException
 from networksecurity.logging.logger import logging
-from networksecurity.entity.config_entity import DataIngestionConfig,DataValidationConfig,DataTransformationConfig
+from networksecurity.entity.config_entity import DataIngestionConfig,DataValidationConfig,DataTransformationConfig,ModelTrainerConfig
 from networksecurity.entity.config_entity import TrainingPipelineConfig
 from networksecurity.components.data_validation import DataValidation
 from networksecurity.components.data_transformation import DataTransformation
+from networksecurity.components.model_trainer import ModelTrainer
 import os
 import sys
 import pymongo
@@ -32,5 +33,12 @@ if __name__ == "__main__":
     datatransformationartifact = datatransformation.initiate_data_transformation()
     print(datatransformationartifact)
     logging.info("Data Transformation Completed")
+    
+    logging.info("Model Training started")
+    model_trainer_config = ModelTrainerConfig(trainingpipelineconfig)
+    model_trainer = ModelTrainer(model_trainer_config=model_trainer_config,data_transformation_artifact=datatransformationartifact)
+    model_trainer_artifact = model_trainer.initiate_model_trainer()
+    
+    logging.info("model Training artifact created")
   except Exception as e:
     raise NetworkSecurityException(e,sys)

@@ -1,0 +1,23 @@
+artifact_path: file:///C:/Users/prasa/OneDrive/end-end-ml/mlruns/1/models/m-73235fa1e02947ef82ea4c1c210ae39f/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.10.0
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+    skops_trusted_types: null
+mlflow_version: 3.10.0
+model_id: m-73235fa1e02947ef82ea4c1c210ae39f
+model_size_bytes: 1392433
+model_uuid: m-73235fa1e02947ef82ea4c1c210ae39f
+prompts: null
+run_id: 48a42d16f7f447d58b1eea9747f4893c
+utc_time_created: '2026-02-25 14:36:19.063550'
