@@ -1,0 +1,30 @@
+Request_URL:
+  P_value: 0.8842337647723617
+  drift_status: false
+Result:
+  P_value: 0.9882052023323422
+  drift_status: false
+SFH:
+  P_value: 0.9540507566693528
+  drift_status: false
+SSLfinal_State:
+  P_value: 0.9839375549673517
+  drift_status: false
+URL_Length:
+  P_value: 1.0
+  drift_status: false
+URL_of_Anchor:
+  P_value: 0.9999999933018646
+  drift_status: false
+age_of_domain:
+  P_value: 1.0
+  drift_status: false
+having_IP_Address:
+  P_value: 0.9999999999818078
+  drift_status: false
+popUpWidnow:
+  P_value: 0.6592903938683468
+  drift_status: false
+web_traffic:
+  P_value: 0.5942476578166697
+  drift_status: false

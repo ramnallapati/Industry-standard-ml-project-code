@@ -9,6 +9,8 @@ Requires-Dist: pymongo
 Requires-Dist: python-dotenv
 Requires-Dist: certifi
 Requires-Dist: scikit-learn
+Requires-Dist: dill
+Requires-Dist: pyaml
 Dynamic: author
 Dynamic: author-email
 Dynamic: requires-dist
