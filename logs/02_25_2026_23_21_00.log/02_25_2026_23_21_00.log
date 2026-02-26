@@ -1,6 +1,0 @@
-[2026-02-25 23:21:05,720] 1025 httpx - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
-[2026-02-25 23:21:05,726] 107 dagshub - Accessing as ramnallapati
-[2026-02-25 23:21:06,950] 1025 httpx - HTTP Request: GET https://dagshub.com/api/v1/repos/ramnallapati/Industry-standard-ml-project-code "HTTP/1.1 200 OK"
-[2026-02-25 23:21:08,396] 1025 httpx - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
-[2026-02-25 23:21:08,399] 107 dagshub - Initialized MLflow to track repo "ramnallapati/Industry-standard-ml-project-code"
-[2026-02-25 23:21:08,399] 107 dagshub - Repository ramnallapati/Industry-standard-ml-project-code initialized!
